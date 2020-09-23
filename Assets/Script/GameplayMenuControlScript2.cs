@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
  using UnityEngine.UI;
 
-public class GameplayMenuControlScript : MonoBehaviour
+public class GameplayMenuControlScript2 : MonoBehaviour
 {
     [SerializeField] Button _backButton;
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class GameplayMenuControlScript : MonoBehaviour
     }
     public void BackToMainMenuButtonClick(Button button)
     {
-        SceneManager.UnloadSceneAsync("SceneGameplay");
+        SceneManager.UnloadSceneAsync("SceneGameplay 2");
        
         SceneManager.LoadScene("SceneMainMenu");
     }

@@ -27,8 +27,15 @@ public class MainMenuControlScript : MonoBehaviour
     public void StartButtonClick(Button button) {
  SceneManager.LoadScene("SceneGameplay");
  }
-
- public void OptionsButtonClick(Button button) {
+    public void StartButtonClick1(Button button)
+    {
+        SceneManager.LoadScene("SceneGameplay 1");
+    }
+    public void StartButtonClick2(Button button)
+    {
+        SceneManager.LoadScene("SceneGameplay 2");
+    }
+    public void OptionsButtonClick(Button button) {
  if (!GameApplicationManager.Instance.IsOptionMenuActive)
      {
      SceneManager.LoadScene("SceneOption", LoadSceneMode.Additive);
